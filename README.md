@@ -41,7 +41,15 @@ To Patch:
 To build, run this command from the root mongo source directory
 * python3 buildscripts/scons.py install-mongod --disable-warnings-as-errors
 
-## 
+## Install
+
+I put this in /usr/local/mongo while some people use /opt/mongo and you need to make sure python poetry is in the path.
+
+To build all
+* python3 buildscripts/scons.py install-all-meta DESTDIR=/usr/local/mongo --disable-warnings-as-errors
+
+To build only mongod
+* python3 buildscripts/scons.py DESTDIR=/usr/local/mongo install-mongod --disable-warnings-as-errors
 
 
 
