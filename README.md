@@ -29,7 +29,13 @@ Installation
 
 ## Patching
 
-TBD - Fill in
+What this does:
+* Turns off sandybridge experimental optimization
+* Turns of SSE3 and SSE4.1 support
+
+To Patch:
+* Go to root of mongo source code directory
+* git apply < mongo-rem-avx.path
 
 ## Building Mongo
 To build, run this command from the root mongo source directory
