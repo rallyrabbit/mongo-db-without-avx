@@ -29,6 +29,30 @@ index e9aa2ca0b16..c965482f5cd 100644
      help='Enable experimental optimizations',
      nargs='?',
      type='choice',
+diff --git a/src/third_party/abseil-cpp/dist/absl/copts/GENERATED_AbseilCopts.cmake b/src/third_party/abseil-cpp/dist/absl/copts/GENERATED_AbseilCopts.cmake
+index 430916f726d..d0b613e990e 100644
+--- a/src/third_party/abseil-cpp/dist/absl/copts/GENERATED_AbseilCopts.cmake
++++ b/src/third_party/abseil-cpp/dist/absl/copts/GENERATED_AbseilCopts.cmake
+@@ -225,5 +225,5 @@ list(APPEND ABSL_RANDOM_HWAES_MSVC_X64_FLAGS
+
+ list(APPEND ABSL_RANDOM_HWAES_X64_FLAGS
+     "-maes"
+-    "-msse4.1"
++    "-msse3"
+ )
+diff --git a/src/third_party/abseil-cpp/dist/absl/copts/copts.py b/src/third_party/abseil-cpp/dist/absl/copts/copts.py
+index e6e119492c6..0fe278a14b7 100644
+--- a/src/third_party/abseil-cpp/dist/absl/copts/copts.py
++++ b/src/third_party/abseil-cpp/dist/absl/copts/copts.py
+@@ -185,7 +185,7 @@ COPT_VARS = {
+     "ABSL_RANDOM_HWAES_ARM32_FLAGS": ["-mfpu=neon"],
+     "ABSL_RANDOM_HWAES_X64_FLAGS": [
+         "-maes",
+-        "-msse4.1",
++        "-msse3",
+     ],
+     "ABSL_RANDOM_HWAES_MSVC_X64_FLAGS": [],
+ }
 diff --git a/src/third_party/mozjs/SConscript b/src/third_party/mozjs/SConscript
 index 56e9c78e4f9..f5bb91158ad 100644
 --- a/src/third_party/mozjs/SConscript
@@ -58,11 +82,15 @@ index 3893de57b32..7db5a669305 100644
  bool SupportsAVX2() { return supports_avx2(); }
 
 diff --git a/src/third_party/snappy/platform/build_linux_x86_64/config.h b/src/third_party/snappy/platform/build_linux_x86_64/config.h
-index 94af08ae0d5..8f34121d77a 100644
+index 94af08ae0d5..6ce366a191c 100644
 --- a/src/third_party/snappy/platform/build_linux_x86_64/config.h
 +++ b/src/third_party/snappy/platform/build_linux_x86_64/config.h
-@@ -47,7 +47,7 @@
- #define SNAPPY_HAVE_SSSE3 1
+@@ -44,10 +44,10 @@
+ #define HAVE_WINDOWS_H 0
+
+ /* Define to 1 if you target processors with SSSE3+ and have <tmmintrin.h>. */
+-#define SNAPPY_HAVE_SSSE3 1
++#define SNAPPY_HAVE_SSSE3 0
 
  /* Define to 1 if you target processors with SSE4.2 and have <crc32intrin.h>. */
 -#define SNAPPY_HAVE_X86_CRC32 1
