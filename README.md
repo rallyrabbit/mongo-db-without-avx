@@ -24,6 +24,19 @@ Things that you will need:
 * apt install python-dev-is-python3 libssl-dev
 * python3 -m pip install -r etc/pip/compile-requirements.txt
 
+Installation
+* Will need poetry installed locally ( https://python-poetry.org/docs/#installation )
+
+## Patching
+
+TBD - Fill in
+
+## Building Mongo
+To build, run this command from the root mongo source directory
+* python3 buildscripts/scons.py install-mongod --disable-warnings-as-errors
+
+## 
+
 
 
 
