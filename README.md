@@ -54,5 +54,12 @@ To build only mongod
 ## Post Install
 Things you will need post install
 * Create a mongod.conf file to go into your /etc (sample is in this project, this is a debian/ubuntu sample)
-
+* chown root:root /etc/mongod.conf
+* useradd mongodb
+* mkdir /var/lib/mongodb
+* mkdir /var/log/mongodb
+* chown mongodb:mongodb /var/lib/mongodb
+* chown mongodb:mongodb /var/log/mongodb
+* chmod 750 /var/lib/mongodb
+* chmod 750 /var/log/mongodb
 
