@@ -51,6 +51,8 @@ To build all
 To build only mongod
 * python3 buildscripts/scons.py DESTDIR=/usr/local/mongo install-mongod --disable-warnings-as-errors
 
-
+## Post Install
+Things you will need post install
+* Create a mongod.conf file to go into your /etc (sample is in this project, this is a debian/ubuntu sample)
 
 
