@@ -63,3 +63,7 @@ Things you will need post install
 * chmod 750 /var/lib/mongodb
 * chmod 750 /var/log/mongodb
 
+## After
+After you test it and it works, then use the strip command to make these gigantic executables a manageable size
+
+
