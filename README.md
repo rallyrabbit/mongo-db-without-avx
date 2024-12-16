@@ -63,8 +63,11 @@ Things you will need post install
 * chmod 750 /var/lib/mongodb
 * chmod 750 /var/log/mongodb
 
-## After
-After you test it and it works, then use the strip command to make these gigantic executables a manageable size
+## After (what tod do)
+
+After you test it and it works:
+* use the "strip" command to remove debug symbols from the executables and reduce the size
+* If you have made static executables, use readelf -d <filename> to validate that the static linking worked
 
 # Handy Mongo Build things to know
 
