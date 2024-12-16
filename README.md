@@ -66,4 +66,34 @@ Things you will need post install
 ## After
 After you test it and it works, then use the strip command to make these gigantic executables a manageable size
 
+# Handy Mongo Build things to know
 
+"Clean" after build
+* python3 buildscripts/scons.py --clean
+
+Build Static
+* python3 buildscripts/scons.py --link-model=static install-servers
+
+Build with a different path target
+
+Different Builds to make
+* python3 buildscripts/scons.py DESTDIR=/usr/local/mongo install-servers
+
+Disable Warnings
+* python3 buildscripts/scons.py --disable-warnings-as-errors install-servers
+
+Other Build Targets
+* Only mongod
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-mongod
+* Only mongos
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-mongos
+* mongod and mongos
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-core
+* All server components (really just mongod, mongos and some scripts)
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-servers
+* install-devscore (mongod, mongos, and jstestshell)
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-devcore
+* All server, end user pieces, and scripts
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-all
+* Everything
+** python3 buildscripts/scons.py --disable-warnings-as-errors install-all-meta
