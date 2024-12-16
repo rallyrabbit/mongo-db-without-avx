@@ -100,7 +100,7 @@ Other Build Targets
   * python3 buildscripts/scons.py install-core
 * All server components (really just mongod, mongos and some scripts)
   * python3 buildscripts/scons.py install-servers
-* install-devscore (mongod, mongos, and jstestshell)
+* install-devcore (mongod, mongos, and jstestshell)
   * python3 buildscripts/scons.py install-devcore
 * All server, end user pieces, and scripts
   * python3 buildscripts/scons.py install-all
