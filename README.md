@@ -86,14 +86,14 @@ Other Build Targets
 * Only mongod
   * python3 buildscripts/scons.py --disable-warnings-as-errors install-mongod
 * Only mongos
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-mongos
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-mongos
 * mongod and mongos
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-core
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-core
 * All server components (really just mongod, mongos and some scripts)
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-servers
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-servers
 * install-devscore (mongod, mongos, and jstestshell)
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-devcore
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-devcore
 * All server, end user pieces, and scripts
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-all
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-all
 * Everything
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-all-meta
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-all-meta
