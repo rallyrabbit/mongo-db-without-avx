@@ -69,6 +69,12 @@ After you test it and it works:
 * use the "strip" command to remove debug symbols from the executables and reduce the size
 * If you have made static executables, use readelf -d <filename> to validate that the static linking worked
 
+# Mongo Tools
+
+My effort was to make a static linked mongo that is easily deployed.  This is a go project located: https://github.com/mongodb/mongo-tools
+
+* Note, mongo-tools cannot be statically linked due to the fact that is links in system variable components.  So this is not possible due to items like getaddrinfo being used and being different system to system.
+
 # Handy Mongo Build things to know
 
 "Clean" after build
