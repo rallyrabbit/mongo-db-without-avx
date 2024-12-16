@@ -84,7 +84,7 @@ Disable Warnings
 
 Other Build Targets
 * Only mongod
-** python3 buildscripts/scons.py --disable-warnings-as-errors install-mongod
+  * python3 buildscripts/scons.py --disable-warnings-as-errors install-mongod
 * Only mongos
 ** python3 buildscripts/scons.py --disable-warnings-as-errors install-mongos
 * mongod and mongos
