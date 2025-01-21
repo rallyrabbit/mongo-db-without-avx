@@ -26,12 +26,16 @@ Things that you will need:
 
 Installation
 * Will need poetry installed locally ( https://python-poetry.org/docs/#installation )
-  * sudo apt-get install pipx
-  * sude apt-get install pip
+  * sudo apt-get install pip
   * sudo /usr/bin/python3 -m pip install 'poetry==1.5.1'
 
 Update Python Modules
-* sudo export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring; /usr/bin/python3 -m poetry install --no-root --sync
+* /usr/bin/python3 -m poetry install --no-root --sync
+
+Other Install Requirements
+* sudo pip install mongo-tooling-metrics
+* sudo pip install retry
+* sudo apt-get install libssl-dev 
 
 ## Patching
 
