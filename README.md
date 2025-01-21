@@ -35,6 +35,7 @@ Update Python Modules
 Other Install Requirements
 * sudo pip install mongo-tooling-metrics
 * sudo pip install retry
+* sudo pip install cheetah3
 * sudo apt-get install libssl-dev 
 
 ## Patching
