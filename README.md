@@ -26,9 +26,9 @@ Things that you will need:
 
 Installation
 * Will need poetry installed locally ( https://python-poetry.org/docs/#installation )
-** sudo apt-get install pipx
-** sude apt-get install pip
-** sudo /usr/bin/python3 -m pip install 'poetry==1.5.1'
+  * sudo apt-get install pipx
+  * sude apt-get install pip
+  * sudo /usr/bin/python3 -m pip install 'poetry==1.5.1'
 
 ## Patching
 
